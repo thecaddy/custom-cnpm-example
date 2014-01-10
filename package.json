@@ -1,0 +1,9 @@
+{
+  "name": "custom-cnpm-example",
+  "version": "0.0.0",
+  "author": "dead_horse <dead_horse@qq.com>",
+  "repository": "cnpm/custom-cnpm-example",
+  "dependencies": {
+    "cnpmjs.org": "0.2.4"
+  }
+}

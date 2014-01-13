@@ -6,6 +6,7 @@ var config = require('./config');
 
 var workerPath = path.join(__dirname, 'worker.js');
 var syncPath = path.join(__dirname, 'sync.js');
+var sysPath = path.join(__dirname, 'sfs.js');
 
 if (config.enableCluster) {
   cluster.setupMaster({
@@ -36,6 +37,7 @@ if (config.enableCluster) {
   }
 
   childProcess.fork(syncPath);
+  childProcess.fork(sysPath);
 } else {
   require(workerPath);
   require(syncPath);

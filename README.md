@@ -21,11 +21,11 @@ Then you get a single-process cnpm server.
 
 ## Culster
 
-To make your system more **stable** and **reliable**, mabey you need to enable cluster mode. Just look at [custom-cnpm-example/cluster](https://github.com/cnpm/custom-cnpm-example/tree/master/simple/cluster). You also can run `cnpmjs.org` in cluster with other cluster modules.
+To make your system more **stable** and **reliable**, mabey you need to enable cluster mode. Just look at [custom-cnpm-example/cluster](https://github.com/cnpm/custom-cnpm-example/tree/master/cluster). You also can run `cnpmjs.org` in cluster with other cluster modules.
 
 ## Simple File System
 
-Maybe you do not have a private file system to replace the `qn file system`, we also provider a [simple file system](https://github.com/cnpm/sfs), which support cluster server. Just check out the example here: [custom-cnpm-example/sfs](https://github.com/cnpm/custom-cnpm-example/tree/master/simple/sfs).
+Maybe you do not have a private file system to replace the `qn file system`, we also provider a [simple file system](https://github.com/cnpm/sfs), which support cluster server. Just check out the example here: [custom-cnpm-example/sfs](https://github.com/cnpm/custom-cnpm-example/tree/master/sfs).
 
 
 ## License

@@ -3,7 +3,11 @@ custom-cnpm-example
 
 Use cnpmjs.org and your own nfs to build your own npm
 
-##Samples
+## Mysql
+
+From [here](https://github.com/cnpm/cnpmjs.org/blob/master/docs/db.sql), you can get the mysql table and create your own mysql database.
+
+## Samples
 
 ### Simple
 

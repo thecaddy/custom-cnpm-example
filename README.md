@@ -27,7 +27,7 @@ To make your system more **stable** and **reliable**, mabey you need to enable c
 
 ### Simple File System
 
-Maybe you do not have a private file system to replace the `qn file system`, we also provider a [simple file system](https://github.com/cnpm/sfs), which support cluster server. Just check out the example here: [custom-cnpm-example/sfs](https://github.com/cnpm/custom-cnpm-example/tree/master/sfs).
+Maybe you do not have a private file system to replace the `qn file store`, we also provider a [simple file system](https://github.com/cnpm/sfs), which support cluster server. Just check out the example here: [custom-cnpm-example/sfs](https://github.com/cnpm/custom-cnpm-example/tree/master/sfs).
 
 ## Try it
 
@@ -44,6 +44,13 @@ $ node cluster
 $ node sfs
 ```
 
+## More File system store support
+
+You can replace the default `qn file store` by any other file store system, only need to follow [this guide](https://github.com/cnpm/cnpmjs.org/wiki/NFS-Guide).
+We provide aliyun oss and taobao tfs support. Just check it out.
+
+* [oss](https://github.com/cnpm/oss-cnpm)
+* [tfs](https://github.com/cnpm/tfs-cnpm)
 
 ## License
 MIT

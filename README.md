@@ -39,13 +39,13 @@ Maybe you do not have a private file system to replace the `qn file store`, we a
 $ cnpm install
 
 # start simple sample
-$ node simple
+$ node --harmony simple
 
 # start cluster sample
-$ node cluster
+$ node --harmony cluster
 
 # start sfs sample
-$ node sfs
+$ node --harmony sfs
 ```
 
 ## More File system store support

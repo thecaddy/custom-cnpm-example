@@ -3,11 +3,6 @@ custom-cnpm-example
 
 Use cnpmjs.org and your own nfs to build your own npm
 
-## Prepare
-
-- Node.js: To run cnpm, please install node v0.11+.
-- Mysql: From [here](https://github.com/cnpm/cnpmjs.org/blob/master/docs/db.sql), you can get the mysql table and create your own mysql database.
-
 ## Samples
 
 - [hello cnpm](hello_cnpm) - The most simple way to use `cnpmjs.org`, default cnpm is private mode, work as a NPM mirror.
@@ -16,13 +11,34 @@ Use cnpmjs.org and your own nfs to build your own npm
 - [simple filesytem](sfs) - Use [sfs](https://github.com/cnpm/sfs) to store tarballs
 - [public registry](public) - Build a public registry with scope support, use for enterprise private registry
 
+## Prepare
+
+- Node.js: To run cnpm, please install node v0.11+.
+- Mysql
+
+### Install Dependencies
+
+```
+npm install
+```
+
+### create mysql tables
+
+```
+mysql -uroot -e 'DROP DATABASE IF EXISTS cnpmjs_test;' &&\
+mysql -uroot -e 'CREATE DATABASE cnpmjs_test;' &&\
+mysql -uroot 'cnpmjs_test' < node_modules/cnpmjs.org/docs/db.sql &&\
+mysql -uroot 'cnpmjs_test' -e 'show tables;'
+
+```
+
+Or you can find all table sqls in [cnpmjs.org/docs/db.sql](https://github.com/cnpm/cnpmjs.org/blob/master/docs/db.sql).
+
 ## Try it
 
-Step one: install dependencies and start the server
+Step one: start server
 
 ```bash
-$ npm install
-
 # start simple sample
 $ node --harmony hello_cnpm
 
@@ -33,7 +49,7 @@ $ node --harmony cluster
 $ node --harmony sfs
 ```
 
-Step two: Wrap cnpm cli for test your own registry
+Step two: wrap cnpm cli for test your own registry
 
 ```
 # install cnpm cli first
@@ -49,8 +65,8 @@ $ alias lnpm='cnpm --registry=http://localhost:7001 \
 Now you can use lnpm to play with yoru own registry:
 
 ```bash
-$ lnpm sync koa
-$ lnpm install koa
+$ lnpm sync moduletest
+$ lnpm install moduletest
 # do whatever npm supported
 ```
 

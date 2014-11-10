@@ -1,3 +1,5 @@
+var path = require('path');
+
 module.exports = {
   // input your custom config here
   admin: {

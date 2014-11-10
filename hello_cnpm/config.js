@@ -11,8 +11,8 @@ module.exports = {
     user: 'root',
     password: '',
   }
-  mysqlDatabase: 'cnpmjs_test',
   database:{
+    db: 'cnpmjs_test',
     dialect: 'mysql'
   }
 };

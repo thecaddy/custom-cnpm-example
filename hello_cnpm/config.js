@@ -3,5 +3,5 @@ module.exports = {
   admin: {
     'admin': 'admin@cnpmjs.org'
   },
-  bindingHost: {}
+  bindingHost: ''
 };

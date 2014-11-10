@@ -4,7 +4,7 @@
   "author": "dead_horse <dead_horse@qq.com>",
   "repository": "cnpm/custom-cnpm-example",
   "dependencies": {
-    "cnpmjs.org": "https://github.com/cnpm/cnpmjs.org.git",
+    "cnpmjs.org": "git://github.com/thecaddy/cnpmjs.org.git",
     "mkdirp": "~0.5.0",
     "qn-cnpm": "~1.0.0",
     "sfs": "~0.1.0",
